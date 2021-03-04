@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Monster memory game</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css" integrity="sha512-dMUQinc1gbNb95AFtKtP4q/g56T8r9oDxlWy0hrHyzfUbMq/vQztAqaR/FDY/bY0R1Ikc30aq94jyQH2Ix++ug==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/game.css" />
+</head>
+
+<body>
+  <div class="header grid-x">
+   <div class='cell small-2'><img src="img/layout/logo.png"></div>
+   <div class='cell small-8'>
+      <h1>Memory Monsters!!</h1>
+      <h4>Hi <span id="name"></span></h4>
+      <div class="counter">pairs: <span id="counter"></span> out of 6 </div>
+      <div id="display">00:00:00</div>
+      <button id="change-player" onclick="changePlayer(this)">change player</button>
+      <button id="kaftor" class="hide" onclick="resetGame(this)">play again</button>
+      <div id="all-best">All time best: <br> 00:00:00</div>
+      <div id="timer">Personal best time: <br> 00:00:00</div>
+   </div> 
+  </div>     
+  
+<div class="content grid-x">
+  <div class='cell small-2'></div>
+  <div class='cell small-8 board'>
+      <div class="card" data-card="1" onclick="cardClicked(this)">
+        <img src="img/cards/1.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+      <div class="card" data-card="7" onclick="cardClicked(this)">
+        <img src="img/cards/7.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+      <div class="card" data-card="3" onclick="cardClicked(this)">
+        <img src="img/cards/3.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+      <div class="card" data-card="7" onclick="cardClicked(this)">
+        <img src="img/cards/7.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+      <div class="card" data-card="5" onclick="cardClicked(this)">
+        <img src="img/cards/5.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+      <div class="card" data-card="6" onclick="cardClicked(this)">
+        <img src="img/cards/6.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+      <div class="card" data-card="1" onclick="cardClicked(this)">
+        <img src="img/cards/1.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+      <div class="card" data-card="3" onclick="cardClicked(this)">
+        <img src="img/cards/3.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+      <div class="card" data-card="5" onclick="cardClicked(this)">
+        <img src="img/cards/5.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+      <div class="card" data-card="6" onclick="cardClicked(this)">
+        <img src="img/cards/6.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+      <div class="card" data-card="8" onclick="cardClicked(this)">
+        <img src="img/cards/8.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+      <div class="card" data-card="8" onclick="cardClicked(this)">
+        <img src="img/cards/8.png">
+        <img class="back" src="img/cards/back.png">
+      </div>
+</div>
+<div class='cell small-2'></div>
+</div>
+
+  <script src="js/game.js"></script>
+
+  
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+.header {
+    background-color:lightseagreen;
+    padding: 10px;
+    border-bottom: 10px solid darkcyan;
+    color:darkcyan;
+    font-size: 1.5em;
+    text-align: center;
+    color : black
+}
+
+.header img { 
+    height: 250 px;
+    width: 200px; 
+}
+
+.card {
+    background-color: pink;
+    height: 165px;
+    width: 165px;    
+    float: left;
+    margin: 5px;
+
+}
+
+.card img {
+    position: absolute;
+}
+
+.flipped .back {
+    display: none;
+}
+button  {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #352626;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom:30px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    transition: all 0.4s ease 0s;
+}
+button:hover {
+background: #434343;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+ .hide {
+     display: none;
+ }
+ 
